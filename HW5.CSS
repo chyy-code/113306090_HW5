@@ -1,0 +1,220 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 330px 540px;
+    width: 900px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left-panel {
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    height: 1150px;
+}
+
+.photo-panel {
+    background-image: url('profile-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+}
+
+.text-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me h2 {
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.contact-info h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.nccu-icon img {
+    width: 290px;
+    align-self: flex-end;
+}
+
+.right-panel {
+    background-color: #f9f9f9;
+    padding: 20px;
+    height: 1050px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 530px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline-item .year {
+    font-weight: bold;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+ul li {
+    margin-bottom: 35px;
+    padding-left: 10px;
+    position: relative;
+}
+
+ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #00796b;
+}
+
+.favorite-music {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     display: flex; 
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px
+}
+
+.favorite-music h2 {
+    font-size: 24px;
+    margin-bottom: 0.02px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.favorite-music {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly; 
+}
+
+.music-items {
+    display: grid;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between; 
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.music-item {
+     display: flex;
+    flex: 1 1 calc(25% - 20px); 
+    max-width: calc(25% - 20px); 
+    box-sizing: border-box;
+    text-align: center;
+    flex-direction: column;
+     align-items: center;
+}
+
+.music-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+     object-fit: cover;
+}
+
+.music-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.education {
+    width: 100%; 
+    padding: 70px; 
+    box-sizing: border-box; 
+    background-color: #f9f9f9;
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+}
+
+.homework-list {
+    width: 100%; 
+    padding: 70px; 
+    box-sizing: border-box; 
+    background-color: #f9f9f9;
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+}
+
+.music-items {
+    width: 100%; 
+    padding: 70px; 
+    box-sizing: border-box; 
+    background-color: #f9f9f9;
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+}
+
+.music-footer {
+    width: 100%; /* 讓這行文字佔據整個區域 */
+    text-align: center; /* 讓文字居中 */
+    margin-top: 20px; /* 距離上方一些距離，避免貼得太近 */
+    font-size: 10px; /* 字體大小 */
+    color: #333; /* 字體顏色 */
+}
